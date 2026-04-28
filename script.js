@@ -1,3 +1,4 @@
+import "dotenv/config"
 import {Langbly} from "Langbly"
 
 // Call Id
@@ -5,11 +6,14 @@ import {Langbly} from "Langbly"
 // let OutputUser = document.getElementById("Output")
 // ========
 
-const client = new Langbly({apiKey: "WvqPhgJ75JmzCLRcpbSsgQ"})
+const client = new Langbly({apiKey: `${process.env.API_KEY}`})
 
 // Translate Text 
-const result = await client.translate("Hello World", {target: "id"})
-console.log(result.text)
+// async function smallText(user){
+// const result = await client.translate(user, {target: "id"})
+    
+// }
+// smallText(InputUser.values)
 
 // Batch Translate
 const results = await client.translate(["Hello","Goodbye"], {target: "id"})

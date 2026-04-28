@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "dotenv": "^17.4.2",
     "langbly": "^0.3.0"
-  }
+  },
+  "type": "module"
 }
