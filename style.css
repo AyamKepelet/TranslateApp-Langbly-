@@ -14,7 +14,9 @@ main{
     background-size: cover;
 }
 form{
-    box-shadow: 0rem 0rem 11rem 1rem white;
+    box-shadow: 1px 1px 10px black;
+    background-color: #E9E4DC;
+    backdrop-filter: blur(10px);
     display: flex;
     padding: 1rem;
     border-radius: 1rem;
@@ -22,8 +24,7 @@ form{
     height: 25rem;
     width: 30rem;
     flex-direction: column;
-    border: 1px;
-    backdrop-filter: blur(8px);
+    border: 2px #E9E4DC solid;
 }
 label{
     margin: 1rem;
