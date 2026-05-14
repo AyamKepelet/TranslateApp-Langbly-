@@ -11,7 +11,15 @@
 </head>
 <body>
     <main>
+        <nav class="navbar">
+            <span class="sub-bar">
+                <h2>
+                    Translate Api
+                </h2>
+            </span>
+        </nav>
      <form id="formulir">
+    <div class="sub-form">
     <!-- Tempat Input -->
         <label for="Input">InputUser</label>
         <textarea name="Input user" id="Input"></textarea>
@@ -21,9 +29,19 @@
         <div class="btn">
         <button type="button" id="Submit">Translate</button>
         </div>
+    <select class="langOption" title="option">
+        <option>Chinese</option>
+        <option>Indonesia</option>
+        <option>English</option>
+        <option>Sunda</option>
+    </select>
+        </div>
+    </div>
+    <div>
+    
     </form>
+    
     </main>
-    <script type="module" src="call.js" defer></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.mjs"></script>
 </body>
 </html>
